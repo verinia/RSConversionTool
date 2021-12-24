@@ -107,7 +107,7 @@ object CompressionUtils {
         }
     }
 
-    fun isGZipped(`in`: InputStream): Boolean {
+    fun isGZipped(`in`: java.io.InputStream): Boolean {
         var `in` = `in`
         if (!`in`.markSupported()) {
             `in` = BufferedInputStream(`in`)
