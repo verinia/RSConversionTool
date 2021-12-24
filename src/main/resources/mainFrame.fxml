@@ -12,7 +12,7 @@
             <Font name="System Bold Italic" size="12.0" />
          </font>
       </Button>
-      <Button layoutX="45.0" layoutY="137.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="280.0" text="Object Definition Conversion ( 317 &gt; OSRS ) ">
+      <Button layoutX="45.0" layoutY="137.0" mnemonicParsing="false" onAction="#launchObjectConversionFrame" prefHeight="45.0" prefWidth="280.0" text="Object Definition Conversion ( 317 &gt; OSRS ) ">
          <font>
             <Font name="System Bold Italic" size="12.0" />
          </font>

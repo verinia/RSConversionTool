@@ -1,7 +1,6 @@
 package frame;
 
 import com.displee.cache.CacheLibrary;
-import com.sun.org.apache.xpath.internal.operations.Mod;
 import converter.ModelConverter;
 import javafx.application.Application;
 import javafx.fxml.FXML;
@@ -37,6 +36,16 @@ public class MainFrame extends Application {
     }
 
     @FXML
+    public void launchObjectConversionFrame() throws IOException {
+        Stage primaryStage = new Stage();
+        Parent root = FXMLLoader.load(getClass().getClassLoader().getResource("objectConversionFrame.fxml"));
+
+        primaryStage.setResizable(false);
+        primaryStage.setScene(new Scene(root));
+        primaryStage.show();
+    }
+
+    @FXML
     public void launchModelConversionFrame() throws IOException {
         Stage primaryStage = new Stage();
         Parent root = FXMLLoader.load(getClass().getClassLoader().getResource("modelConversionFrame.fxml"));
@@ -45,7 +54,6 @@ public class MainFrame extends Application {
         primaryStage.setScene(new Scene(root));
         primaryStage.show();
     }
-
 
     @FXML
     public void originalCacheBrowse() {

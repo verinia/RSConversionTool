@@ -13,15 +13,15 @@
             <Font name="System Bold" size="14.0" />
          </font>
       </Label>
-      <TextField layoutX="56.0" layoutY="57.0" prefHeight="25.0" prefWidth="329.0" />
-      <Button layoutX="394.0" layoutY="57.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="64.0" text="Browse" />
+      <TextField fx:id="originalCacheTextField" disable="true" layoutX="56.0" layoutY="57.0" prefHeight="25.0" prefWidth="329.0" />
+      <Button layoutX="394.0" layoutY="57.0" mnemonicParsing="false" onAction="#originalCacheBrowse" prefHeight="25.0" prefWidth="64.0" text="Browse" />
       <Label layoutX="181.0" layoutY="119.0" text="OSRS Cache" textFill="WHITE">
          <font>
             <Font name="System Bold" size="14.0" />
          </font>
       </Label>
-      <TextField layoutX="56.0" layoutY="153.0" prefHeight="25.0" prefWidth="329.0" />
-      <Button layoutX="394.0" layoutY="153.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="64.0" text="Browse" />
+      <TextField fx:id="osrsCacheTextField" disable="true" layoutX="56.0" layoutY="153.0" prefHeight="25.0" prefWidth="329.0" />
+      <Button layoutX="394.0" layoutY="153.0" mnemonicParsing="false" onAction="#osrsCacheBrowse" prefHeight="25.0" prefWidth="64.0" text="Browse" />
       <Button layoutX="133.0" layoutY="204.0" mnemonicParsing="false" prefHeight="62.0" prefWidth="213.0" text="Pack">
          <font>
             <Font name="System Bold" size="13.0" />
